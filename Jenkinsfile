@@ -11,12 +11,12 @@ pipeline {
             } 
             steps {
                 sh '''
-                    sudo ls -la
-                    sudo node --version
-                    sudo npm --version
-                    sudo npm ci
-                    sudo npm run build
-                    sudo ls -la
+                    ls -la
+                    node --version
+                    npm --version
+                    npm ci
+                    npm run build
+                    ls -la
                 '''
             }
         }
