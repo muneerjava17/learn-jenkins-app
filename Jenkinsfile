@@ -14,8 +14,8 @@ pipeline {
                     ls -la
                     node --version
                     npm --version
+                    export npm_config_cache=/path/to/cache
                     npm ci
-                    npm cache clean --force
                     npm run build
                     ls -la
                 '''
