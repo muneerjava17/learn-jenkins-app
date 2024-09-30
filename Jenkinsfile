@@ -11,15 +11,15 @@ pipeline {
             } 
             steps {
                 sh '''
-                    ls -la
-                    node --version
-                    npm --version
-                    npm ci
-                    sudo chown -R 501:20 /.npm
-                    npm run build
-                    ls -la
+                    sudo ls -la
+                    sudo node --version
+                    sudo npm --version
+                    sudo npm ci
+                    sudo npm run build
+                    sudo ls -la
                 '''
             }
         }
     }
 }
+//sudo chown -R 501:20 /.npm
